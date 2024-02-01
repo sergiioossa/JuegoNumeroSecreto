@@ -88,3 +88,4 @@ function generarNumeroSecreto() {
 }
 
 condicionesIniciales();
+console.log(numeroSecreto);
