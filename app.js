@@ -48,7 +48,7 @@ function initialConditions() {
 }
 
 function maxNumAttempts() {
-  if (attempt == maxNumAttempts) {
+  if (attempt == maxNumAttempt) {
     assignTextElement(
       "p",
       `Llegaste al número máximo de ${attempt} ${attempt == 1 ? "intento" : "intentos"
@@ -76,7 +76,7 @@ function generateSecretNum() {
   //si el numero generado está en la lista
   //si ya sorteamos todos los numeros
   if (listDrawNum.length == maxNumber) {
-    asignarTextoElemento("p", "Ya has dicho todos los números");
+    assignTextElement("p", "Ya has dicho todos los números");
   }
 
   if (listDrawNum.includes(generatedNumber)) {
